@@ -1,27 +1,14 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
-*,
-*::after,
-*::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-html {
-	font-size: 62.5%;
-}
-body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	line-height: 1.7;
-	color: $color-grey-dark;
-	padding: 3rem;
-	box-sizing: border-box;
-}
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
 /* Header section */
 .header {
 	position: relative;
@@ -67,89 +54,5 @@ body {
 		font-weight: 700;
 		letter-spacing: 1.75rem;
 		animation: moveInRight 1s ease-out;
-	}
-}
-@keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-10rem);
-	}
-	80% {
-		transform: translateX(1rem);
-	}
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-@keyframes moveInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(10rem);
-	}
-	80% {
-		transform: translateX(-1rem);
-	}
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-@keyframes moveInBottom {
-	0% {
-		opacity: 0;
-		transform: translateY(3rem);
-	}
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-.btn {
-	&:link,
-	&:visited {
-		display: inline-block;
-		text-transform: uppercase;
-		text-decoration: none;
-		padding: 1.5rem 4rem;
-		border-radius: 10rem;
-		transition: all .2s;
-		position: relative;
-		font-size: 1.6rem;
-	}
-	&:hover {
-		transform: translateY(-0.3rem);
-		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-		&::after {
-			transform: scaleX(1.4) scaleY(1.6);
-			opacity: 0;
-		}
-	}
-	&:active {
-		transform: translateY(-0.1rem);
-		box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
-	}
-	&--white {
-		background-color: $color-white;
-		color: $color-grey-dark;
-		&::after {
-			background-color: $color-white;
-		}
-	}
-	&::after {
-		content: '';
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		border-radius: 10rem;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		transition: all .4s;
-	}
-	&--animated {
-		animation: moveInBottom .5s ease-out .7s;
-		animation-fill-mode: backwards;
 	}
 }
