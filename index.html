@@ -35,7 +35,7 @@
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>   
 
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -148,7 +148,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$299</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$599</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$999</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -329,13 +329,33 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Atque dignissimos enim unde quam, animi aperiam magni deserunt ipsa hic maiores, 
-                        temporibus neque dolorum tempore sit fugit! Nulla ipsa quas consequuntur.
+                        Designed by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his <a href="#" class="footer__link">Advanced CSS and Sass</a> course. 
+                        Implemented with <span class="footer__emoji">&#10084;&#65039;</span> by <a href="https://www.linkedin.com/in/vladyslav-semeniuk" class="footer__link">Qnemes</a>
                     </p>
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section__tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nesciunt laudantium, cupiditate fugit maiores sequi 
+                        eos facilis facere vel magni obcaecati sunt quae excepturi mollitia, vitae rem. Neque, distinctio.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nesciunt laudantium, cupiditate fugit maiores sequieos facilis facere vel magni obcaecati sunt quae excepturi mollitia, 
+                        vitae rem. Neque, distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nesciunt laudantium, cupiditate fugit maiores sequi 
+                        eos facilis facere vel magni obcaecati sunt quae excepturi mollitia, vitae rem.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
         
         <!-- <section class="grid-test">
             <div class="row">
