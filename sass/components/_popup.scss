@@ -9,10 +9,10 @@
 	opacity: 0;
 	visibility: hidden;
     transition: all .6s;
-    // Disabling annoying animation on heading
+	// Disabling annoying animation on heading
     & h2 {
         pointer-events: none;
-    }
+	}
 	&__content {
 		@include center_horizontal-vertical;
 		width: 75%;
@@ -23,17 +23,27 @@
         overflow: hidden;        
         opacity: 0;
         transform: translate(-50%,-50%) scale(.25);
-        transition: all .5s .2s;
+		transition: all .5s .2s;
+		@include respond(tab-port) {
+			width: 95%;
+		}
 	}
 	&__left {
 		width: 33.333333%;
 		display: table-cell;
+		@include respond(phone) {
+			display: none;
+		}
 	}
 	&__right {
 		width: 66.6666667%;
 		display: table-cell;
 		vertical-align: middle;
 		padding: 3rem 5rem;
+		@include respond(phone) {
+			display: block;
+			width: 100%;
+		}
 	}
 	&__img {
 		display: block;
@@ -58,6 +68,9 @@
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
 		hyphens: auto;
+		@include respond(tab-port) {
+			font-size: 1.2rem;
+		}
     }
     // Open/Close transitions
 	&:target {
