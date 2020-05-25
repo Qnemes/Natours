@@ -48,6 +48,7 @@
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
@@ -958,6 +959,7 @@ body {
         width: 100%; } }
   .popup__img {
     display: block;
+    margin: .5rem 0 .5rem .5rem;
     width: 100%; }
   .popup__text {
     font-size: 1.4rem;

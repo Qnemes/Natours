@@ -6,6 +6,7 @@
 	box-sizing: inherit;
 }
 html {
+	scroll-behavior: smooth;
 	// Defines 1rem value, based on user preferences
 	font-size: 62.5%; // 62.5% from 16px is 10px.It is for easier calculation purpose
 

@@ -63,9 +63,18 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Photo 1" class="composition__photo composition__photo--p1"
+                                src="img/nat-1-large.jpg">
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Photo 2" class="composition__photo composition__photo--p2"
+                                src="img/nat-2-large.jpg">
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Photo 3" class="composition__photo composition__photo--p3"
+                                src="img/nat-3-large.jpg">
                         </div>
                     </div>
                 </div>
@@ -238,7 +247,10 @@
                 <div class="row">
                     <div class="story" id="stories">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a hiking tour" class="story__img">
+                            <img srcset="img/nat-8.jpg 300w, img/nat-8-large.jpg 1000w" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Person on a hiking tour" class="story__img"
+                                src="img/nat-8-large.jpg">
                             <figcaption class="story__caption">Amy Miles</figcaption>
                         </figure>
                         <div class="story__text">
@@ -252,7 +264,10 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a hiking tour" class="story__img">
+                            <img srcset="img/nat-9.jpg 300w, img/nat-9-large.jpg 1000w" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Person on a hiking tour" class="story__img"
+                                src="img/nat-9-large.jpg">
                             <figcaption class="story__caption">Matthew O&apos;Neal</figcaption>
                         </figure>
                         <div class="story__text">
@@ -313,7 +328,11 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                            media="(max-width: 37.5em)">
+                        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -338,8 +357,14 @@
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                    <img srcset="img/nat-8.jpg 300w, img/nat-8-large.jpg 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                            alt="Tour photo" class="popup__img"
+                            src="img/nat-8-large.jpg">
+                    <img srcset="img/nat-9.jpg 300w, img/nat-9-large.jpg 1000w" 
+                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
+                            alt="Tour photo" class="popup__img"
+                            src="img/nat-9-large.jpg">
                 </div>
                 <div class="popup__right">
                     <a href="#section__tours" class="popup__close">&times;</a>
@@ -352,72 +377,9 @@
                         vitae rem. Neque, distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nesciunt laudantium, cupiditate fugit maiores sequi 
                         eos facilis facere vel magni obcaecati sunt quae excepturi mollitia, vitae rem.
                     </p>
-                    <a href="#" class="btn btn--green">Book now</a>
+                    <a href="#book-now" class="btn btn--green">Book now</a>
                 </div>
             </div>
         </div>
-        
-        <!-- <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>                
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>           
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>                
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>                
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>  
-            </div>
-        </section> -->
     </body>
 </html>
