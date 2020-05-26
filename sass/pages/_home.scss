@@ -14,10 +14,16 @@
     background-image: linear-gradient(to right bottom, 
     rgba($color-primary-light, 0.8), 
     rgba($color-primary-dark, 0.8)),
-        url(../img/nat-4.jpg);
+        url(../img/nat-4-small.jpg);
     background-size: cover;
     transform: skewY(-4deg);
     margin-top: -10rem;
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)),
+		url(../img/nat-4.jpg);
+	}
     & > * {
         transform: skewY(4deg);
     }
@@ -55,10 +61,17 @@
                     rgba($color-white, .9) 0%,
                     rgba($color-white, .9) 50%,
                     transparent 50%), 
-                    url(../img/nat-10.jpg);
+                    url(../img/nat-10-small.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: linear-gradient(105deg, 
+                        rgba($color-white, .9) 0%,
+                        rgba($color-white, .9) 50%,
+                        transparent 50%), 
+                        url(../img/nat-10.jpg);
+    }
     @include respond(tab-land) {
         background-image: linear-gradient(105deg, 
         rgba($color-white, .9) 0%,
