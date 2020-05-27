@@ -8,8 +8,14 @@
 	z-index: 9999;
 	opacity: 0;
 	visibility: hidden;
-    transition: all .6s;
-	// Disabling annoying animation on heading
+	transition: all .6s;	
+	@supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+		// bluring background on popup
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba($color-black, .3);
+	}
+	// disabling annoying animation on heading
     & h2 {
         pointer-events: none;
 	}
@@ -49,6 +55,7 @@
 		display: block;
 		margin: .5rem 0 .5rem .5rem;
 		width: 100%;
+		border-radius: 3px;
 	}
 	&__text {
 		font-size: 1.4rem;
